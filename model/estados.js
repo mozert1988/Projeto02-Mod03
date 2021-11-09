@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
-const paisesModel = new mongoose.Schema({
+const estadoModel = new mongoose.Schema({
     nome: {type: String, required: true },
     populacao: { type: Number},
     idioma: { type: Number, required: true},
     pib: {type: Number}
 });
 
-const Paises = mongoose.model("Paises", paisesModel);
+const Estado = mongoose.model("Estados", estadoModel);
 
-module.exports = Paises; 
+module.exports = Estado; 
